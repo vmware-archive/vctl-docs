@@ -188,5 +188,5 @@ By adding the "-k" parameter when running a container, when the container exits 
 
 ### Known Limitations and issues
 
-See this document: [Known Limitations](./limitations.md)
+See this document: [Known Limitations](./known-limitations.md)
 

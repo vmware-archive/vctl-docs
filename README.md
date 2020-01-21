@@ -16,7 +16,7 @@ Nautilus is included with the 20H1 Tech Preview of VMware Fusion. The 'vctl' com
 
 ## Where do I get the Fusion 20H1 Tech Preview?
 
-You can download the beta from here: ***< link >***
+You can download the beta from here: ***https://bit.ly/getnautilus***
 
 
 ## Can I have Fusion and Fusion Tech Preview installed at the same time?
@@ -41,7 +41,7 @@ To support Nautilus, Fusion 20H1 Tech Preview requires macOS 10.14 as a minimum 
 
 ## How do I get started?
 
-You can check out our Getting Started guide ***here***
+You can check out our Getting Started guide ***[here](./docs/getting-started.md)***
 
 
 
