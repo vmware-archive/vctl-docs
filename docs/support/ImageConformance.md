@@ -1,4 +1,9 @@
-| **Images**  | **VCTL Sample Commands** | **Notes** |
+# Tested Images
+
+What follows here is a maintained list of containers that we have tested and any caveats that need consideration when running that image.
+
+
+| **Images**  | **'vctl' Sample Commands** | **Notes** |
 | ------------- | ------------- | ------------- |
 | adoptopenjdk | vctl run container -t --image docker.io/library/adoptopenjdk:latest myopenjdk |  |
 | aerospike | vctl run container myaerospike -p 3000:3000 -p 3001:3001 -p 3002:3002 -p 3003:3003 --image docker.io/library/aerospike:latest -t -v $PWD/aerospike:/opt/aerospike/etc -- /entrypoint.sh asd --foreground --config-file /opt/aerospike/etc/aerospike.conf | Put aerospike.conf under $PWD/aerospike folder |
