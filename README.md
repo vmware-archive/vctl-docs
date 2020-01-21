@@ -41,7 +41,7 @@ To support Nautilus, Fusion 20H1 Tech Preview requires macOS 10.14 as a minimum 
 
 ## How do I get started?
 
-You can check out our Getting Started guide ***here***
+You can check out our Getting Started guide ***[here](https://github.com/VMwareFusion/nautilus/blob/master/docs/getting-started.md)***
 
 
 
