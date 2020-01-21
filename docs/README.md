@@ -1,11 +1,8 @@
 # VMware Project Nautilus Documentation
 
-[Getting Started Guide](./GettingStarted.md) 
+[Getting Started Guide](./getting-started.md) 
 
 [Frequently Asked Questions](./FAQ.md)
 
 [man pages](../man/)
-
-[Running Kubernetes]("running-kubernetes.md)
-
 
