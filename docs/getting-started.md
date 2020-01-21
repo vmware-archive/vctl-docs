@@ -1,5 +1,7 @@
 # Getting Started with Project Nautilus
 
+[![asciicast](https://asciinema.org/a/7mT0ZiVOBtJawDHg3zERfjkxA.svg)](https://asciinema.org/a/7mT0ZiVOBtJawDHg3zERfjkxA)
+
 Project Nautilus is included with the VMware Fusion Tech Preview 20H1 release. No additional software is necessary.
 
 ### Install Fusion Tech Preview 20H1 build
