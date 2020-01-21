@@ -93,7 +93,7 @@ myNginx1   docker.io/library/nginx:latest       nginx -g daemon off;   172.16.22
 Now you can launch a web browser to navigate to the IP of the nginx container which is now up and running.
 
 
-## Stop/Start the container
+### Stop/Start the container
 You can stop the container to free up resources with following command:
 
 ```
