@@ -1,3 +1,14 @@
+### How many containers can I run at the same time in my mac
+
+This depends on your host memory. The default memory size for each PodVM is 1G. You can use vctl system prepare to change this default configuration.
+
+### How does vctl pass an entrypoint command to container
+
+If no argument is passed to the 'vctl run container' command, by default the image's entrypoint command will be invoked.
+
+ If there are arguments provided, unlike 'docker run' command where the arguments are appended to the image's predefined entrypoint command, in 'vctl run container', they themselves will be treated as the container's entrypoint command and replace the image's predefined one, to be invoked directly.
+
+
 ### How to reset Nautilus?
 
 As a troubleshooting measure, you may choose to reset Nautilus. 
@@ -14,17 +25,6 @@ Warning: Don't save any other data under ~/.nautilus, or back ~/.nautilus before
 
 % vctl system start
 ```
-
-### How many containers can I run at the same time in my mac
-
-This depends on your host memory. The default memory size for each PodVM is 1G. You can use vctl system prepare to change this default configuration.
-
-
-### How does vctl pass an entrypoint command to container
-
-If no argument is passed to the 'vctl run container' command, by default the image's entrypoint command will be invoked.
-
- If there are arguments provided, unlike 'docker run' command where the arguments are appended to the image's predefined entrypoint command, in 'vctl run container', they themselves will be treated as the container's entrypoint command and replace the image's predefined one, to be invoked directly.
 
 ### How to completely remove Project Nautilus data after removing Fusion Tech Preview 20H1
 
