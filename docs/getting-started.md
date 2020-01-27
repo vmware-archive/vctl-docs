@@ -9,7 +9,7 @@ Fusion Tech Preview 20H1 can be installed on the same host as the current shippi
 
 ### Prepare your system
 
-In order to properly run containers on the Mac using Fusion, we need to make some inital adjustments to the system. 
+In order to properly run containers on the Mac using Fusion, we need to make some initial adjustments to the system. 
 These changes include:
 - Creating a case-sensitive volume for storing container images 
 - - you can see this mounted on your desktop once the services start
@@ -32,7 +32,7 @@ Container runtime has been started.
 
 ```
 
-If you prefer you can also customize the preperation. This will allow you to set new defaults for the PodVM size, as well as the size of the container storage volume.
+If you prefer you can also customize the preparation. This will allow you to set new defaults for the PodVM size, as well as the size of the container storage volume.
 
 ```
 % vctl system prepare [options]
@@ -68,7 +68,7 @@ INFO done
 
 
 ### Run the container image
-Once the image has been pulled locally, you can run it as a new container. Here we're also specifying the '-d' flag which detatches the host console session from the running container. 
+Once the image has been pulled locally, you can run it as a new container. Here we're also specifying the '-d' flag which detaches the host console session from the running container. 
 
 ```
 % vctl run container myNginx1 -d -i  docker.io/library/nginx:latest
@@ -110,7 +110,7 @@ INFO container myNginx1 started and detached from current session
 
 ### Get or List images
 
-vctl provides a convenient way to show the images and running contianers. Use 'get' or 'list' or 'ls' to show some basic information about an object type.
+vctl provides a convenient way to show the images and running containers. Use 'get' or 'list' or 'ls' to show some basic information about an object type.
 
 ```
 % vctl get image
