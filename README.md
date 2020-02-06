@@ -4,14 +4,12 @@ Project and doc repo for VMware Project Nautilus
 
 ## What is Project Nautilus?
 
-Taking inspiration from the Kubernetes community, Project Nautilus allows Fusion and Workstation to push, pull, and natively run docker and oci-compliant contaniner images and kubernetes clusters on developer workstations.
-
-Project Nautilus is also an ongoing effort within VMware to reshape how Fusion and Workstation are used to develop and test applications.
+Project Nautilus is the name ascribed to an ongoing transformation of Fusion and Workstation to support OCI Containers, and more. Under the project we have developed 'vctl', whcih allows Fusion to push, pull, and natively run docker and oci-compliant contaniner images and kubernetes clusters on developer workstations. (Coming soon: 'build' images from dockerfile, and Workstation support.)
 
 
-## How do I install Nautilus?
+## How do I install vctl?
 
-Nautilus is included with the 20H1 Tech Preview of VMware Fusion. The 'vctl' command line tool is added to $PATH by default and can be used once Fusion Tech Preview is installed.
+'vctl' is included with the 20H1 Tech Preview of VMware Fusion. The 'vctl' command line tool is added to $PATH by default and can be used once Fusion Tech Preview is installed.
 
 
 ## Where do I get the Fusion 20H1 Tech Preview?
@@ -36,7 +34,7 @@ Nautilus is the sum of two main parts: The 'engine' and backend runtime support 
 
 ## What are the System Requirements?
 
-To support Nautilus, Fusion 20H1 Tech Preview requires macOS 10.14 as a minimum host OS.
+To support vctl, Fusion 20H1 Tech Preview requires macOS 10.14 as a minimum host OS.
 
 
 ## How do I get started?
