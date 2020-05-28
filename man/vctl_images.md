@@ -1,19 +1,20 @@
-## vctl version
+## vctl images
 
-Print the version of vctl.
+List container images.
 
 ### Synopsis
 
-Show the version information of vctl.
+Print basic information about one or more container images.
 
 ```
-vctl version [OPTIONS]
+vctl images [OPTIONS] [IMAGE...]
 ```
 
 ### Options
 
 ```
-  -h, --help   Help for version
+  -d, --digests   Show digests
+  -h, --help      Help for images
 ```
 
 ### SEE ALSO
