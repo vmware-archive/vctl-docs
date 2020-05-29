@@ -1,5 +1,5 @@
-# VMware Project Nautilus
-Project and doc repo for VMware Project Nautilus
+# VMware Fusion Container Runtime Docs
+Project and doc repo for vctl and Project Nautilus
 
 
 ## What is Project Nautilus?
