@@ -2,7 +2,7 @@
 
 ### How many containers can I run at the same time in my mac
 
-This depends on your host memory. The default memory size for each PodVM is 1G. You can use vctl system prepare to change this default configuration.
+This depends on your host memory and the nature of your container application. The container appliance only consumes as much memory as the services within it request
 
 ### How does vctl pass an entrypoint command to container
 
@@ -11,34 +11,19 @@ If no argument is passed to the 'vctl run container' command, by default the ima
  If there are arguments provided, unlike 'docker run' command where the arguments are appended to the image's predefined entrypoint command, in 'vctl run container', they themselves will be treated as the container's entrypoint command and replace the image's predefined one, to be invoked directly.
 
 
-### How to reset Nautilus?
+### How to reset my environment?
 
-As a troubleshooting measure, you may choose to reset Nautilus. 
+As a troubleshooting measure, you may choose to reset your container environment. 
 Note that proceeding with the following steps, any container and image data will be lost.
 
 ```
-% vctl system stop
+> vctl system stop --force
 ```
 
-Warning: Don't save any other data under ~/.nautilus, or back ~/.nautilus before running next command.
+This command will remove all existing container images and storage (use with caution!)
 
 ```
-% rm -rf ~/.nautilus 
+> rm -rf ~/.vctl 
 
-% vctl system start
-```
-
-### How to completely remove Project Nautilus data after removing Fusion Tech Preview 20H1
-
-Your environment can be cleaned up with the following steps:
-
-```
-% vctl system stop
-```
-Remove Fusion Tech Preview by dragging it to the trash
-
-Then remove the Nautilus container image and config folder.
-
-```
-% rm -rf ~/.nautilus  
+> vctl system start
 ```
