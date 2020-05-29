@@ -1,3 +1,7 @@
+# Deprecated
+
+As of Fusion 11.5.5 and TP20H2, this document is no longer maintained. We expect all containers to work, and where something does not wokr as expected we would encourage users to [file an issue](https://github.com/VMwareFusion/nautilus/issues/new).
+
 # Tested Images
 
 What follows here is a maintained list of containers that we have tested and any caveats that need consideration when running that image.

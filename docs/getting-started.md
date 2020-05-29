@@ -1,8 +1,9 @@
-# Getting Started with Project Nautilus
+# Getting Started with Containers on VMware Fusion
 
 [![asciicast](https://asciinema.org/a/iPMELQH4kHA5sL721CtYTxU7e.svg)](https://asciinema.org/a/iPMELQH4kHA5sL721CtYTxU7e)
 
-Project Nautilus is included with the VMware Fusion Tech Preview 20H1 release. No additional software is necessary.
+As of Fusion 11.5.5 and "TP20H2", vctl is a part of the standard installation. vctl is the interface for our Project Nautilus container runtime.
+
 
 ### Install Fusion Tech 11.5.5 or Tech Preview 20H2
 Fusion 11.5.5 now includes vctl! Update from any prior version and it becomes instantly available at the command line. 

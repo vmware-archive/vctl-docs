@@ -6,13 +6,11 @@ vctl is included with VMware Fusion Tech Preview 20H2, as well as Fusion 15.5.5.
 
 
 **Direct Download:**
-- [link](link)
+[https://vmware.com/go/getfusion](vmware.com/go/getfusion)
 
 **MyVMware Downloads**
-- [link](link)
+- [MyVMware](https://my.vmware.com/web/vmware/details?downloadGroup=FUS-1155&productId=798&rPId=46541)
 
-**Short URL:**
-[https://vmware.com/go/getfusion](vmware.com/go/getfusion)
 
 
 ## Tech Preview 20H2:
