@@ -9,12 +9,19 @@ Project Nautilus is the name ascribed to an ongoing transformation of Fusion and
 
 ## How do I install vctl?
 
-'vctl' is included with the 20H1 Tech Preview of VMware Fusion. The 'vctl' command line tool is added to $PATH by default and can be used once Fusion Tech Preview is installed.
+'vctl' is included with Fusion 11.5.5 and the 20H2 Tech Preview of VMware Fusion. The 'vctl' command line tool is added to $PATH by default each time Fusion starts, and does not need tobe installed seperately.
 
 
-## Where do I get the Fusion 20H1 Tech Preview?
+## Where can I try Fusion 11.5.5?
+Fusion includes a built-in 30 day trial license.
 
-You can download the beta from here: ***https://bit.ly/getnautilus***
+You can download it directly from here:
+
+- [vmware.com/go/getfusion](https://vmware.com/go/getfusion)
+
+## Where do I get the Fusion 20H2 Tech Preview?
+
+You can download the beta from here: ***[https://bit.ly/getnautilus](https://bit.ly/getnautilus)***
 
 
 ## Can I have Fusion and Fusion Tech Preview installed at the same time?
@@ -29,12 +36,14 @@ No. You should quit VMware Fusion non-tech preview version before launching the 
 
 ## How do I use Nautilus?
 
-Nautilus is the sum of two main parts: The 'engine' and backend runtime support services, and the front-end CLI. Users interact with Nautilus using the 'vctl' command to start services, and perform operations with containers.
+Nautilus is the sum of two main parts: The 'engine' and backend runtime support services, and the front-end CLI. Users interact with Nautilus using the 'vctl' command to start services, and perform operations with containers. Our backend is based on containerd, so if your application can communicate with the containerd daemon, we hope it would work with ours as well. 
 
 
 ## What are the System Requirements?
 
-To support vctl, Fusion 20H1 Tech Preview requires macOS 10.14 as a minimum host OS.
+Fusion 20H2 Tech Preview requires macOS 10.14 as a minimum host OS.
+
+Fusion 11.5.5 system requirements have unchagned since as of 15.5.0
 
 
 ## How do I get started?
