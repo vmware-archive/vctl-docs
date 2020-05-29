@@ -9,6 +9,11 @@ Quick Link:
 
 Project Nautilus is the name ascribed to an ongoing transformation of Fusion and Workstation to support OCI Containers and more. 
 
+## How do I use Nautilus?
+
+Nautilus is the sum of two main parts: The 'engine' and backend runtime support services, and the front-end CLI. Users interact with Nautilus using the 'vctl' command to start services, and perform operations with containers. Our backend is based on containerd, so if your application can communicate with the containerd daemon, we hope it would work with ours as well. 
+
+
 ## What is vctl?
 
 vctl is the command line interface that drives Fusion to push, pull, and natively run docker and oci-compliant contaniner images and kubernetes clusters on developer workstations. 
@@ -38,11 +43,6 @@ Yes. Fusion dynamically loads kernel extensions when it launches and unloads the
 ## Can I run Fusion and Fusion Tech Preview at the same time?
 
 No. You should quit VMware Fusion non-tech preview version before launching the Tech Preview build.
-
-
-## How do I use Nautilus?
-
-Nautilus is the sum of two main parts: The 'engine' and backend runtime support services, and the front-end CLI. Users interact with Nautilus using the 'vctl' command to start services, and perform operations with containers. Our backend is based on containerd, so if your application can communicate with the containerd daemon, we hope it would work with ours as well. 
 
 
 ## What are the System Requirements?
