@@ -33,7 +33,7 @@ Container runtime has been started.
 
 If you prefer you can also customize the preparation. This will allow you to set new defaults for the container appliance vm size, as well as the size of the container storage volume.
 
-You can also specify these parametes when executing `vctl run` by using the **-c** and **-m** flags.
+You can also specify these parameters when executing `vctl run` by using the **-c** and **-m** flags.
 
 
 ```
