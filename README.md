@@ -1,11 +1,17 @@
 # VMware Fusion Container Runtime Docs
-Project and doc repo for vctl and Project Nautilus
 
+[![asciicast](https://asciinema.org/a/iPMELQH4kHA5sL721CtYTxU7e.svg)](https://asciinema.org/a/iPMELQH4kHA5sL721CtYTxU7e)
+
+Quick Link:
+- [Getting Started Guide](./docs/getting-started.md)
 
 ## What is Project Nautilus?
 
-Project Nautilus is the name ascribed to an ongoing transformation of Fusion and Workstation to support OCI Containers, and more. Under the project we have developed 'vctl', whcih allows Fusion to push, pull, and natively run docker and oci-compliant contaniner images and kubernetes clusters on developer workstations. (Coming soon: 'build' images from dockerfile, and Workstation support.)
+Project Nautilus is the name ascribed to an ongoing transformation of Fusion and Workstation to support OCI Containers and more. 
 
+## What is vctl?
+
+vctl is the command line interface that drives Fusion to push, pull, and natively run docker and oci-compliant contaniner images and kubernetes clusters on developer workstations. 
 
 ## How do I install vctl?
 
