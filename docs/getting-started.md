@@ -265,8 +265,3 @@ sh-4.4#
 ### Keep the VM running after container stopped
 
 By adding the "-k" parameter when running a container, when the container exits its appliance vm will keep running. You can still `vctl execvm --sh` into the container host to inspect logs and other debug info.
-
-### Known Limitations and issues
-
-See this document: [Known Limitations](./known-limitations.md)
-
