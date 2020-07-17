@@ -49,7 +49,7 @@ No. You should quit VMware Fusion non-tech preview version before launching the 
 
 Fusion 20H2 Tech Preview requires macOS 10.14 as a minimum host OS.
 
-Fusion 11.5.5 system requirements have unchagned since as of 15.5.0
+Fusion 11.5.5 system requirements are located ***[here](https://docs.vmware.com/en/VMware-Fusion/11.5.0/rn/VMware-Fusion-1155-Release-Notes.html)***
 
 
 ## How do I get started?
