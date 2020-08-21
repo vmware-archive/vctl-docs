@@ -16,11 +16,11 @@ Nautilus is the sum of two main parts: The 'engine' and backend runtime support 
 
 ## What is vctl?
 
-vctl is the command line interface that drives Fusion to push, pull, and natively run docker and oci-compliant contaniner images and kubernetes clusters on developer workstations. 
+vctl is the command line interface that drives Fusion to push, pull, and natively run docker and oci-compliant container images and kubernetes clusters on developer workstations. 
 
 ## How do I install vctl?
 
-'vctl' is included with Fusion 11.5.5 and the 20H2 Tech Preview of VMware Fusion. The 'vctl' command line tool is added to $PATH by default each time Fusion starts, and does not need tobe installed seperately.
+'vctl' is included with Fusion 11.5.5 and the 20H2 Tech Preview of VMware Fusion. The 'vctl' command line tool is added to $PATH by default each time Fusion starts, and does not need to be installed seperately.
 
 
 ## Where can I try Fusion 11.5.5?
