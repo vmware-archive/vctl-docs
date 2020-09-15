@@ -1,26 +1,57 @@
 # Download locations
 
-vctl is included with VMware Fusion Tech Preview 20H2, as well as Fusion 15.5.5. A license key is included with the Tech Preview, but VMware Fusion beta agreement must be agreed to during installation in order for Fusion to function.  Fusion 15.5.5 is a free update to Fusion 15 customers.
-
-## Fusion 15.5.5
+vctl is included with VMware Fusion 12 and Workstation 16, both Pro and Player.
 
 
-**Direct Download:**
-[https://vmware.com/go/getfusion](vmware.com/go/getfusion)
+## Fusion 12 Pro 
+
+**Direct Download (Pro and Player:**
+- [vmware.com/go/getfusion](https://www.vmware.com/go/getfusion)
 
 **MyVMware Downloads**
-- [MyVMware](https://my.vmware.com/web/vmware/details?downloadGroup=FUS-1155&productId=798&rPId=46541)
+- [MyVMware](https://www.vmware.com/go/downloadfusion)
+
+## Fusion 12 Player:
+
+Register for Personal Use License:
+- [vmware.com/go/get-fusionplayer-key](https://www.vmware.com/go/get-fusionplayer-key)
 
 
+Additionally, Fusion can be installed via [Homebrew](https://formulae.brew.sh/cask/vmware-fusion).
+After installation, it is recommended to launch the UI to complete the initialization steps, and to license the product.
 
-## Tech Preview 20H2:
+` brew cask install vmware-fusion`
 
-Direct Download:
-- [https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-16227879.dmg](https://download3.vmware.com/software/fusion/file/VMware-Fusion-e.x.p-16227879.dmg)
+*Note that homebrew installations are officially unsupported.*
 
-MyVMware Link:
-- [https://my.vmware.com/group/vmware/get-download?downloadGroup=FUS-TP-2020H2](https://my.vmware.com/group/vmware/get-download?downloadGroup=FUS-TP-2020H2)
+## Workstation 16 Pro
 
-Short URL:
-- [https://vmware.com/go/get-nautilus-mac](https://vmware.com/go/get-nautilus-mac)
+**Direct Download:**
+
+- Windows: [vmware.com/go/getworkstation-win](https://www.vmware.com/go/getworkstation-win)
+- Linux: [vmware.com/go/getworkstation-linux](https://www.vmware.com/go/getworkstation-linux)
+
+**MyVMware Downloads**
+- [MyVMware](https://www.vmware.com/go/downloadworkstation)
+
+**Evaluate Workstation Pro**
+[vmware.com/go/tryworkstation](https://www.vmware.com/go/tryworkstation)
+
+VMware Workstation can also be installed with [Chocolatey](https://chocolatey.org/packages/vmwareworkstation)
+
+From a cmd.exe or PowerShell prompt:
+
+`choco install vmwareworkstation`
+
+If you have an existing installation:
+`choco upgrade vmwareworkstation`
+
+*Note that chocolaty installations are officially unsupported.*
+
+## Workstation 16 Player:
+
+Download (Perrsonal Use License is built-in):
+- Windows: [vmware.com/go/getplayer-win](https://www.vmware.com/go/getplayer-win)
+- Linux: [vmware.com/go/getplayer-linux](https://www.vmware.com/go/getplayer-linux)
+
 
