@@ -1,8 +1,8 @@
-# Project Nautilus FAQs
+# vctl FAQs
 
 ### How many containers can I run at the same time in my mac
 
-This depends on your host memory and the nature of your container application. The container appliance only consumes as much memory as the services within it request
+This depends on your host memory and the nature of your container application. The container appliance only consumes as much memory as the services within it request.
 
 ### How does vctl pass an entrypoint command to container
 

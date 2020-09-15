@@ -1,6 +1,6 @@
 ## vctl
 
-vctl - A CLI tool for the Nautilus Container Engine powered by VMware Fusion
+vctl - A CLI tool for the VMware Fusion and Workstation container runtime
 
 ### Synopsis
 
@@ -32,7 +32,7 @@ vctl Highlights:
 * [vctl run](vctl_run.md)	 - Run a new container from a container image.
 * [vctl start](vctl_start.md)	 - Start an existing container.
 * [vctl stop](vctl_stop.md)	 - Stop a container.
-* [vctl system](vctl_system.md)	 - Manage the Nautilus Container Engine.
+* [vctl system](vctl_system.md)	 - Manage the container runtime.
 * [vctl tag](vctl_tag.md)	 - Tag container images.
 * [vctl version](vctl_version.md)	 - Print the version of vctl.
 

@@ -1,18 +1,16 @@
-# Getting Started with Project Nautilus
+# Getting Started with vctl on Fusion and Workstation
 
-Project Nautilus is included with VMware Fusion 11.5.5 and the Fusion Tech Preview 20H2 releases. No additional software is necessary.
+the vctl CLI is included with VMware Fusion 12 and VMware Workstation 16, both Pro and Player. Fusion 11.5.x will continue to ship the previous version of vctl, but will differ in capability from Fusion 12.
 
-### Install Fusion Tech 11.5.5 or Tech Preview 20H2
-Fusion 11.5.5 now includes vctl! Update from any prior version and it becomes instantly available at the command line. 
-
-vctl is also updated in the latest Tech Preview 20H2, and can be installed on the same host as the current shipping VMware Fusion "GA" version. Note that only one copy of Fusion or Fusion Tech Preview can be running at a given time.
+### Install Fusion 12 or Workstation 16
+Fusion and Workstation download links and installation instructions can be found [here](downloads.md)
 
 ### Start the vctl service
 
-The first operation is to start the container runtime. On first launch, `vctl system start` automatically prepares the system with the dependenceis it needs, including:
+The first operation is to start the container runtime. On first launch, `vctl system start` will automatically prepare the system with the dependenceis it needs, including:
 
 - Creating a case-sensitive volume for storing container images 
-  - you can see this mounted on your desktop once the services start
+  - you can see this mounted on your desktop once the services start, and you can access the contents directly
 - Creating a container network using vmnet
 - launching the container runtime system service
 
@@ -54,7 +52,40 @@ EXAMPLES:
 
 ```
 
-### Pull an image from a remote repository
+
+### vctl commands
+You can type `vctl` with no arguments to get a list of commands available to run containers.  
+
+```
+USAGE:
+  vctl COMMAND [OPTIONS]
+
+COMMANDS:
+  build       Build a container image from a Dockerfile.
+  create      Create a new container from a container image.
+  describe    Show details of a container.
+  exec        Execute a command within a running container.
+  execvm      Execute a command within a running virtual machine that hosts container.
+  help        Help about any command.
+  images      List container images.
+  ps          List containers.
+  pull        Pull a container image from a registry.
+  push        Push a container image to a registry.
+  rm          Remove one or more containers.
+  rmi         Remove one or more container images.
+  run         Run a new container from a container image.
+  start       Start an existing container.
+  stop        Stop a container.
+  system      Manage the Container Engine.
+  tag         Tag container images.
+  version     Print the version of vctl.
+
+Run 'vctl COMMAND --help' for more information on a command.
+```
+
+
+
+### Pull an image from a remote registry
 To run a container, you will firstly need to get an image from a repository, or you'll need to build one from a Dockerfile. Images are by default pulled from dockerhub, but a private image registry such as Harbor can be used as well.
 
 ```
@@ -72,6 +103,25 @@ layer-sha256:b90c53a0b69244e37b3f8672579fc3dec13293eeb574fa0fdddf02da1e192fd6   
 INFO Unpacking nginx:latest...
 INFO done
 ```
+
+### Log in to a remote registry
+
+vctl now supports a persistent login to a private remote container registery.
+```
+USAGE:
+  vctl login [OPTIONS] [SERVER]
+```
+
+`> vctl login -u username -p password myregistry:5000`
+
+
+By default it will attempt to login to dockerhub, but you can specify a compatible registry like [Harbor](https://goharbor.io) via fqdn:
+
+`vctl login` also supports stdin with the `--password-stdin` flag
+
+`> cat /path/to/password.txt | vctl login -u username -p password --password-stdin
+
+
 
 ### Build a new container image
 
@@ -95,6 +145,11 @@ INFO successfully built image myImage:latest
 
 ### Run the container image
 Once the image has been built or pulled locally, you can run it as a new container. Here we're also specifying the '-d' flag which detaches the host console session from the running container. 
+
+```
+USAGE:
+  vctl run [OPTIONS] IMAGE [COMMAND] [ARGUMENTS...]
+```
 
 ```
 > vctl run -n myNginx -t -d nginx
@@ -157,37 +212,10 @@ nginx:latest   2020-05-28T15:29:26-07:00   48.7 MiB
 ```
 
 
+### Using kind Kubernetes with vctl
 
-### vctl commands
-You can type `vctl` with no arguments to get a list of commands available to run containers.  
-
-```
-USAGE:
-  vctl COMMAND [OPTIONS]
-
-COMMANDS:
-  build       Build a container image from a Dockerfile.
-  create      Create a new container from a container image.
-  describe    Show details of a container.
-  exec        Execute a command within a running container.
-  execvm      Execute a command within a running virtual machine that hosts container.
-  help        Help about any command.
-  images      List container images.
-  ps          List containers.
-  pull        Pull a container image from a registry.
-  push        Push a container image to a registry.
-  rm          Remove one or more containers.
-  rmi         Remove one or more container images.
-  run         Run a new container from a container image.
-  start       Start an existing container.
-  stop        Stop a container.
-  system      Manage the Nautilus Container Engine.
-  tag         Tag container images.
-  version     Print the version of vctl.
-
-Run 'vctl COMMAND --help' for more information on a command.
-```
-
+vctl provides a way to alias docker commands to run on the vctl containerd runtime.
+For more information, review this document: [kind](kind.md)
 
 
 ### Advanced Use Cases
@@ -251,7 +279,7 @@ var
 
 ### Shell access into the container appliance VM
 
-Nautilus has the ability to shell into the container appliance (virtual machine) of the specified container.
+vctl has the ability to shell into the container appliance (virtual machine) of the specified container.
 
 Example:
 
