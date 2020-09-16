@@ -1,10 +1,6 @@
 ## vctl
 
-<<<<<<< HEAD
-vctl - A CLI tool for the VMware Fusion and Workstation container runtime
-=======
 vctl - A CLI tool for the container engine powered by VMware Fusion
->>>>>>> 828526f7c6cf996c7d2252b2f09bd7fb58bc9d9a
 
 ### Synopsis
 
@@ -40,11 +36,7 @@ vctl Highlights:
 * [vctl run](vctl_run.md)	 - Run a new container from a container image.
 * [vctl start](vctl_start.md)	 - Start an existing container.
 * [vctl stop](vctl_stop.md)	 - Stop a container.
-<<<<<<< HEAD
-* [vctl system](vctl_system.md)	 - Manage the container runtime.
-=======
 * [vctl system](vctl_system.md)	 - Manage the container engine.
->>>>>>> 828526f7c6cf996c7d2252b2f09bd7fb58bc9d9a
 * [vctl tag](vctl_tag.md)	 - Tag container images.
 * [vctl version](vctl_version.md)	 - Print the version of vctl.
 * [vctl volume](vctl_volume.md)	 - Manage volumes.
