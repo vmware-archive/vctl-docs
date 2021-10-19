@@ -20,7 +20,7 @@ Register for Personal Use License:
 Additionally, Fusion can be installed via [Homebrew](https://formulae.brew.sh/cask/vmware-fusion).
 After installation, it is recommended to launch the UI to complete the initialization steps, and to license the product.
 
-` brew cask install vmware-fusion`
+` brew install cask vmware-fusion`
 
 *Note that homebrew installations are officially unsupported.*
 
